@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.androiddevchallenge"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -49,6 +49,15 @@ android {
         renderScript false
         resValues false
         shaders false
+    }
+
+    compileOptions {
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 
     composeOptions {
